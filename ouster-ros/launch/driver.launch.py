@@ -48,7 +48,10 @@ def generate_launch_description():
         executable='os_driver',
         name=os_driver_name,
         namespace=ouster_ns,
-        parameters=[params_file],
+        parameters=[
+            params_file,
+            {'use_sim_time': True},
+        ],
         output='screen',
     )
 
