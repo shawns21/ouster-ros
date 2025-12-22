@@ -41,7 +41,7 @@ def generate_launch_description():
             'params_file': params_file,
             'ouster_ns': '',
             'os_driver_name': 'ouster_driver',
-            'viz': 'True',
+            'viz': 'False',
             'rviz_config': './install/ouster_ros/share/ouster_ros/config/community_driver.rviz'
         }.items()
     )
